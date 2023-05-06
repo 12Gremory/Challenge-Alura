@@ -1,0 +1,282 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background: #E9ECF8;
+    position: relative;
+}
+
+#texto {
+    font-family: 'Inter';
+    font-style: normal;
+    width: 680px;
+    height: 48px;
+
+    font-weight: 400;
+    font-size: 32px;
+    line-height: 150%;
+    line-height: 48px;
+
+    top: 168px;
+    left: 240px;
+    position: absolute;
+    color: #0A3871;
+    border: none;
+    background: #E9ECF8;
+    
+    resize: none;
+    overflow: hidden;
+}
+
+#texto::placeholder {
+    color: #0A3871;
+}
+
+.row {
+    width: 680px;
+    height: 67px;
+    left: 240px;
+    top: 885px;
+    position: absolute;
+
+    /*padding: 0px;
+    display: grid;
+    grid-template-columns: repeat(2, 367px [col-start]);
+    gap: 8px;*/
+
+    display: flex;
+    gap: 24px;
+
+
+}
+
+.wrapper .button1 {
+
+    box-sizing: border-box;
+
+    font-family: 'Inter';
+    font-size: 16px;
+    font-weight: 400;
+    font-style: normal;
+    line-height: 19px;
+    text-align: center;
+    align-items: center;
+    color: #FFFFFF;
+
+    display: inline-grid;
+    flex-direction: row;
+    padding: 24px;
+    gap: 8px;
+
+    width: 328px;
+    height: 67px;
+
+    background: #0A3871;
+    border-radius: 24px;
+    border: none;
+    cursor: pointer;
+}
+
+.wrapper .button2 {
+
+    box-sizing: border-box;
+
+    font-family: 'Inter';
+    font-size: 16px;
+    font-weight: 400;
+    font-style: normal;
+    line-height: 19px;
+    text-align: center;
+    align-items: center;
+    color: #0A3871;
+
+
+    display: inline-grid;
+    flex-direction: row;
+    padding: 24px;
+    gap: 8px;
+
+    width: 328px;
+    height: 67px;
+
+    background: #D8DFE8;
+    border-radius: 24px;
+    border: 1px solid #0A3871;
+    cursor: pointer;
+}
+
+#exclamacao {
+    position: absolute;
+    width: 252;
+    height: 18px;
+    top: 851px;
+    left: 240px;
+
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    padding: 0px;
+    gap: 8px;
+
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 150%;
+
+    color: #495057;
+    opacity: 0.8;
+}
+
+#box {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 0;
+    gap: 16px;
+
+    position: absolute;
+    width: 336px;
+    height: 122px;
+    left: 1032px;
+    top: 619px;
+}
+
+#one {
+    height: 58px;
+
+    color: #343A40;
+    font-family: 'Inter';
+    font-size: 24px;
+    font-weight: 700;
+    font-style: normal;
+    line-height: 120%;
+
+    text-align: center;
+    
+    flex: none;
+    order: 0;
+    align-self: stretch;
+    flex-grow: 0;
+}
+
+#two {
+    height: 48px;
+
+    color: #495057;
+    font-family: 'Inter';
+    font-size: 16px;
+    font-weight: 400;
+    font-style: normal;
+    line-height: 150%;
+
+    text-align: center;
+
+    flex: none;
+    order: 1;
+    align-self: stretch;
+    flex-grow: 0;
+}
+
+#output_img {
+    position: absolute;
+    width: 336px;
+    height: 304px;
+    left: 1032px;
+    top: 283px;
+}
+
+#output {
+    position: absolute;
+    width: 400px;
+    height: 944px;
+    left: 1000px;
+    top: 40px;
+
+    padding: 32px;
+
+    box-shadow: 0px 24px 32px -8px rgba(0, 0, 0, 0.08);
+    border-radius: 32px;
+    border: none;
+
+    overflow: hidden;
+    resize: none;
+
+    color: #0A3871;
+    font-family: 'Inter';
+    font-size: 24px;
+    font-weight: 400;
+    font-style: normal;
+    line-height: 150%;
+}
+
+header {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 0px;
+    gap: 40px;
+
+    position: absolute;
+    width: 120px;
+    height: 48px;
+    left: 40px;
+    top: 40px;
+}
+
+.copiar {
+    box-sizing: border-box;
+
+    display: none;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-around;
+    padding: 24px;
+    gap: 8px;
+
+    position: absolute;
+    width: 336px;
+    height: 67px;
+    left: 1032px;
+    top: 885px;
+
+    border: 1px solid #0A3871;
+    border-radius: 24px;
+
+    font-family: 'Inter';
+    font-size: 16px;
+    font-weight: 400;
+    font-style: normal;
+    line-height: 19px;
+    text-align: center;
+    color: #0A3871;
+
+    cursor: pointer;
+}
+
+footer {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    background-color: #E9ECF8;
+    color: #0A3871;
+
+
+    position: relative;
+
+    width: 200px;
+    margin-left: 20px;
+    padding: 5px;
+    height: 30px;
+
+    top: 1000px;
+
+}
+
+#saida {
+    position: relative;
+    align-items: center;
+}
